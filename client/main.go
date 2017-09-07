@@ -268,7 +268,7 @@ func main() {
 			kcpconn.SetWindowSize(sndwnd, rcvwnd)
 			kcpconn.SetMtu(mtu)
 			kcpconn.SetACKNoDelay(acknodelay)
-			kcpconn.SetKeepAlive(keepalive)
+			//kcpconn.SetKeepAlive(keepalive)
 
 			if err := kcpconn.SetDSCP(dscp); err != nil {
 				log.Println("SetDSCP:", err)
